@@ -12,7 +12,7 @@ def main():
   parser.add_argument('--md5', type=str, help='expected md5')
   args = parser.parse_args()
 
-  result = check_file(args.input_file)
+  result = check_file(args.input_file, args.md5)
 
   results_file  = open("results.json", "w")
   if (result == 0):
@@ -28,12 +28,12 @@ def main():
   # correct way to do this?
   return(result)
 
-def check_file(input_file):
+def check_file(input_file, md5):
   file = open(input_file, "r")
   contents = file.read()
   contents = contents.rstrip()
   print ("FILE CONTENTS: "+contents)
-  if (contents == args.md5):
+  if (contents == md5):
     print("Contents match")
     return(0)
   else:
