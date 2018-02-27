@@ -21,16 +21,16 @@ outputs:
 
 steps:
   md5sum:
-    run: md5sum/dockstore-tool-md5sum.cwl
+    run: md5sum/md5sum.cwl
     in:
       input_file: input_file
     out: [output_file]
   checker:
-    run: checker/md5sum_checker_args.cwl
-    in: 
+    run: checker/md5sum_checker.cwl
+    in:
       input_file: md5sum/output_file
       expected_md5: expected_md5
     out: [results_file]
 
-doc: | 
+doc: |
   This demonstrates how to wrap a "real" tool with a checker workflow that runs both the tool and a tool that performs verification of results

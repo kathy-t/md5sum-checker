@@ -50,4 +50,4 @@ outputs:
       glob: log.txt
     doc: A text log file that contains more details.
 
-baseCommand: [/bin/check_md5sum_args]
+baseCommand: [/bin/check_md5sum]
