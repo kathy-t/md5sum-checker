@@ -10,4 +10,8 @@ Run with the following command:
 `cwltool checker_workflow_wrapping_tool.cwl md5sum-wrapper-tool.json`
 
 ### CWL Workflow with Checker Workflow
-Coming soon
+Main descriptor: checker_workflow_wrapping_workflow.cwl
+
+Run with the following command:
+
+`cwltool checker_workflow_wrapping_workflow.cwl md5sum-wrapper-tool.json`
