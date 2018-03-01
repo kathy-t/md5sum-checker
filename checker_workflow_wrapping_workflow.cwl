@@ -1,6 +1,9 @@
 cwlVersion: v1.0
 class: Workflow
 
+requirements:
+  - class: SubworkflowFeatureRequirement
+
 #dct:creator:
 #  '@id': http://orcid.org/0000-0002-7681-6415
 #  foaf:name: Brian O'Connor
@@ -21,7 +24,7 @@ outputs:
 
 steps:
   md5sum:
-    run: md5sum/md5sum-tool.cwl
+    run: md5sum/md5sum-workflow.cwl
     in:
       input_file: input_file
     out: [output_file]
