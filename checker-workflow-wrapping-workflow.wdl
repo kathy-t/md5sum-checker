@@ -1,5 +1,5 @@
 import "md5sum/md5sum-workflow.wdl" as md5sum
-import "checker/md5sum_checker.wdl" as checker
+import "checker/md5sum-checker.wdl" as checker
 
 workflow checkerWorkflow {
  File inputFile
