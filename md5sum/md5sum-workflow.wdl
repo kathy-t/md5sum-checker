@@ -11,9 +11,6 @@ task md5 {
 
  runtime {
    docker: "quay.io/agduncan94/md5sum-checker"
-   cpu: 1
-   memory: "512 MB"
-   disks: "local-disk 10 HDD"
  }
 }
 
