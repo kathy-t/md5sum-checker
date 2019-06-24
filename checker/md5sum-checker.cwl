@@ -7,7 +7,7 @@ cwlVersion: v1.0
 
 requirements:
 - class: DockerRequirement
-  dockerPull: quay.io/dockstore-testing/md5sum-checker
+  dockerPull: quay.io/agduncan94/checker-md5sum
 - class: InlineJavascriptRequirement
 
 hints:
